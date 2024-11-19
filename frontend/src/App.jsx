@@ -3,11 +3,14 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import PerformanceTest from './components/PerformanceTest';
+import { VITE_GOOGLE_CLIENT_ID } from './constants';
 import axios from 'axios';
+
 
 function App() {
   const serverUrl = import.meta.env.VITE_APP_SERVER_URL;
-  const clientID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+  // const clientID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+  const clientID = VITE_GOOGLE_CLIENT_ID;
   const [searchParams] = useSearchParams();
   const [isLogin, setIsLogin] = useState(false);
   const handleLoginSuccess = () => {
