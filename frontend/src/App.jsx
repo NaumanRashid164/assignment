@@ -9,8 +9,8 @@ import axios from 'axios';
 
 function App() {
   const serverUrl = import.meta.env.VITE_APP_SERVER_URL;
-  // const clientID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
-  const clientID = VITE_GOOGLE_CLIENT_ID;
+  // const clientID = VITE_GOOGLE_CLIENT_ID;
+  const clientID = "873262355992-jn745jjg6469fkuaiqcrl6v7cd084pac.apps.googleusercontent.com";
   const [searchParams] = useSearchParams();
   const [isLogin, setIsLogin] = useState(false);
   const handleLoginSuccess = () => {
